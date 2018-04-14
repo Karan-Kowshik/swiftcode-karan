@@ -30,7 +30,7 @@ public class NewsAgentService
                     .get();
             //collect the response from the api
             //the api will return source, keyword and category
-            JsonNode response = responsePromise.thenApply(WSResponse::asJson).toCompletableFuture.get();
+            JsonNode response = responsePromise.thenApply(WSResponse::asJson).toCompletableFuture().get();
             //conditions if the api doesnt return all the data
             newsAgentResponse.query = response.get("result").get("parameters").get("keyword").asText().isEmpty() ?
                     (response.get("result").get("parameters").get("source").asText().isEmpty()

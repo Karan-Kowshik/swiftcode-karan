@@ -1,1 +1,25 @@
+html,
+body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
 
+#message-pane {
+    background: linear-gradient(#42A5F5, #3F51B5)
+}
+
+#form-card {
+    margin: 0px;
+    background-color: #EEEEEE;
+}
+
+.material-icons {
+    font-size: 24px !important;
+}
+
+.message-card {
+    max-width: 75%;
+    padding: 3%;
+}
