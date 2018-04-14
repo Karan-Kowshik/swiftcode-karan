@@ -32,9 +32,9 @@ public class FeedService
             //Getting the 10item in the <channel>
             Node item = feedResponse.getFirstChild().getFirstChild().getChildNode().item(10);
             //Getting title, description and pubDate from the 10th item in channel
-            feedResposeObject.title = item(0).getChildNodes().getFirstChild().getNodeValue();
-            feedResposeObject.description = item(4).getChildNodes().getFirstChild().getNodeValue();
-            feedResposeObject.pubDate = item(3).getChildNodes().getFirstChild().getNodeValue();
+            feedResposeObject.title = item.getChildNodes().item(0).getFirstChild().getNodeValue();
+            feedResposeObject.description = item.getChildNodes().item(4).getFirstChild().getNodeValue();
+            feedResposeObject.pubDate = item.getChildNodes().item(3).getFirstChild().getNodeValue();
         }
         catch(Exception e)
         {

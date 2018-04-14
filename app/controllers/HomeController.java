@@ -20,6 +20,6 @@ public class HomeController extends Controller
 {
     public Result chat()
     {
-        return ok("Hello World");
+        return ok(chat.render());
     }
 }
