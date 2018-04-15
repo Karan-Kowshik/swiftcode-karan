@@ -9,6 +9,7 @@ body {
 #message-pane {
     background-image: url(https://cdn.dribbble.com/users/392575/screenshots/1232960/shot_tree_of_seasons_01.gif);
     background-position: center;
+    font-size: 13px;
 }
 
 #form-card {
@@ -39,4 +40,14 @@ body {
 .message-card {
     max-width: 75%;
     padding: 3%;
+}
+
+.message-time {
+    font-size: 8.5px;
+    margin-top: 3px;
+    color: #90A4AE;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
