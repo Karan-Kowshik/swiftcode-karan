@@ -7,7 +7,8 @@ body {
 }
 
 #message-pane {
-    background: linear-gradient(#42A5F5, #3F51B5)
+    background-image: url(https://cdn.dribbble.com/users/392575/screenshots/1232960/shot_tree_of_seasons_01.gif);
+    background-position: center;
 }
 
 #form-card {
@@ -15,8 +16,24 @@ body {
     background-color: #EEEEEE;
 }
 
+#bot-info-card {
+    background-color: #424242;
+    margin: 0px;
+}
+
 .material-icons {
     font-size: 24px !important;
+}
+
+.back-button {
+    font-size: 30px !important;
+    color: white;
+}
+
+.account {
+    font-size: 40px !important;
+    padding-left: 10px;
+    color: white;
 }
 
 .message-card {

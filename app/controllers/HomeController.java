@@ -18,6 +18,10 @@ import java.util.Objects;
 
 public class HomeController extends Controller
 {
+    public LegacyWebSocket<String> chatSocket()
+    {
+        return WebSocket.withActor(MessageActor::props);
+    }
     public Result chat()
     {
         return ok(chat.render());
